@@ -1,11 +1,11 @@
 ### Install the application layer policy stuff.
 
-Docs are here: https://docs.projectcalico.org/master/getting-started/kubernetes/installation/app-layer-policy
+Docs are here: https://docs.projectcalico.org/v3.6/getting-started/kubernetes/installation/app-layer-policy
 
 tldr;
 
 ```
-kubectl apply -f https://docs.projectcalico.org/master/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/calico-networking/calico-node.yaml
+kubectl apply -f https://docs.projectcalico.org/v3.6/getting-started/kubernetes/installation/manifests/app-layer-policy/kubernetes-datastore/calico-networking/calico-node.yaml
 ```
 
 then install istio:
@@ -20,14 +20,14 @@ fixup the istio sidecar injection:
 
 ```
 kubectl apply -f \
-https://docs.projectcalico.org/master/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-inject-configmap.yaml
+https://docs.projectcalico.org/v3.6/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-inject-configmap.yaml
 ```
 
 Adding Calico Auth services to the istio mesh:
 
 ```
 kubectl apply -f \
-https://docs.projectcalico.org/master/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-app-layer-policy.yaml
+https://docs.projectcalico.org/v3.6/getting-started/kubernetes/installation/manifests/app-layer-policy/istio-app-layer-policy.yaml
 ```
 
 ** SUPER IMPORTANT **
